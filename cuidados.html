@@ -1,0 +1,94 @@
+<
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados | Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">🐾 Mundo Animal</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="razas.html">Razas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="cuidados.html">Cuidados</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="etiqueta">BIENESTAR ANIMAL</p>
+        <h1>Cuidar también es amar</h1>
+        <p>Aprendé cómo ayudar a tus mascotas a tener una vida saludable y feliz.</p>
+    </div>
+</section>
+
+<section class="cuidados" id="perros">
+    <h2>🐶 Cuidados para perros</h2>
+    <div class="consejos">
+        <div class="consejo">
+            <span>🥣</span>
+            <h3>Alimentación</h3>
+            <p>Ofrecé alimento adecuado para su edad, tamaño y necesidades. Siempre debe tener agua limpia.</p>
+        </div>
+        <div class="consejo">
+            <span>🦮</span>
+            <h3>Paseos y ejercicio</h3>
+            <p>Adaptá los paseos y juegos a su edad, salud y nivel de energía. Utilizá correa en lugares públicos cuando corresponda.</p>
+        </div>
+        <div class="consejo">
+            <span>🩺</span>
+            <h3>Salud</h3>
+            <p>Consultá con un veterinario para las vacunas, la prevención de parásitos y los controles de rutina.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cuidados" id="gatos" style="background:#f0f5eb">
+    <h2>🐱 Cuidados para gatos</h2>
+    <div class="consejos">
+        <div class="consejo">
+            <span>🚰</span>
+            <h3>Agua y comida</h3>
+            <p>Proporcioná agua fresca y alimento completo apropiado para su etapa de vida.</p>
+        </div>
+        <div class="consejo">
+            <span>🧹</span>
+            <h3>Higiene</h3>
+            <p>Mantené limpio el arenero y colocálo en un lugar tranquilo y accesible.</p>
+        </div>
+        <div class="consejo">
+            <span>🧶</span>
+            <h3>Juego y seguridad</h3>
+            <p>Ofrecé juguetes, rascadores, lugares para esconderse y ventanas protegidas para evitar accidentes.</p>
+        </div>
+    </div>
+</section>
+
+<section class="mensaje">
+    <h2>❤️ El compromiso es para toda la vida</h2>
+    <p>Las mascotas necesitan atención, paciencia, respeto y cuidados diarios. Ante dudas sobre su salud, consultá con un veterinario.</p>
+    <p style="margin-top:25px">
+        <a href="perros.html" class="boton">Conocer los perros</a>
+        <a href="gatos.html" class="boton">Conocer los gatos</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Mundo Animal | Hecho con ❤️ para los amantes de los animales.</p>
+</footer>
+
+<div class="visor-fotos" id="visorFotos" aria-hidden="true">
+    <button class="cerrar-visor" id="cerrarVisor" aria-label="Cerrar fotografía">&times;</button>
+    <button class="foto-anterior" id="fotoAnterior" aria-label="Fotografía anterior">&#10094;</button>
+    <figure><img id="fotoAmpliada" src="" alt=""><figcaption id="descripcionFoto"></figcaption></figure>
+    <button class="foto-siguiente" id="fotoSiguiente" aria-label="Fotografía siguiente">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

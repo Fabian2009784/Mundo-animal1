@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razas | Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">🐾 Mundo Animal</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="razas.html">Razas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="cuidados.html">Cuidados</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="etiqueta">DESCUBRÍ SUS DIFERENCIAS</p>
+        <h1>Razas de perros y gatos</h1>
+        <p>Cada animal tiene características y necesidades propias.</p>
+    </div>
+</section>
+
+<section class="razas">
+    <h2>🐶 Razas de perros</h2>
+    <p class="subtitulo">Conocé algunas razas populares.</p>
+    <div class="razas-grid">
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=700&q=80" alt="Golden retriever">
+            <div class="raza-info">
+                <h4>Golden Retriever</h4>
+                <p>Generalmente sociable y colaborador. Necesita actividad, compañía y cepillado regular.</p>
+            </div>
+        </article>
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?auto=format&fit=crop&w=700&q=80" alt="Perro">
+            <div class="raza-info">
+                <h4>Beagle</h4>
+                <p>Es curioso y tiene un olfato desarrollado. Disfruta explorar y realizar actividades.</p>
+            </div>
+        </article>
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?auto=format&fit=crop&w=700&q=80" alt="Perro de pelaje abundante">
+            <div class="raza-info">
+                <h4>Husky Siberiano</h4>
+                <p>Es activo y resistente. Necesita ejercicio, atención y cuidados para su pelaje.</p>
+            </div>
+        </article>
+    </div>
+
+    <h2 style="margin-top:55px">🐱 Razas de gatos</h2>
+    <p class="subtitulo">Algunos gatos tienen características muy particulares.</p>
+    <div class="razas-grid">
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80" alt="Gato doméstico">
+            <div class="raza-info">
+                <h4>Gato doméstico de pelo corto</h4>
+                <p>Puede presentar numerosos colores y patrones. Su personalidad depende de cada individuo.</p>
+            </div>
+        </article>
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=700&q=80" alt="Gato de pelo largo">
+            <div class="raza-info">
+                <h4>Gato de pelo largo</h4>
+                <p>Su pelaje requiere cepillado frecuente para reducir los enredos.</p>
+            </div>
+        </article>
+        <article class="raza">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=700&q=80" alt="Gato de pelaje naranja y blanco">
+            <div class="raza-info">
+                <h4>Gato de pelo corto doméstico</h4>
+                <p>Es una categoría de gatos domésticos, no una raza única. Puede tener distintas apariencias y temperamentos.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mundo Animal | Hecho con ❤️ para los amantes de los animales.</p>
+</footer>
+
+<div class="visor-fotos" id="visorFotos" aria-hidden="true">
+    <button class="cerrar-visor" id="cerrarVisor" aria-label="Cerrar fotografía">&times;</button>
+    <button class="foto-anterior" id="fotoAnterior" aria-label="Fotografía anterior">&#10094;</button>
+    <figure><img id="fotoAmpliada" src="" alt=""><figcaption id="descripcionFoto"></figcaption></figure>
+    <button class="foto-siguiente" id="fotoSiguiente" aria-label="Fotografía siguiente">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

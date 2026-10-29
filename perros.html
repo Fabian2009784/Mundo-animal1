@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perros | Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">🐾 Mundo Animal</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="razas.html">Razas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="cuidados.html">Cuidados</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="etiqueta">EL MEJOR AMIGO DEL SER HUMANO</p>
+        <h1>¡Bienvenido al mundo de los perros!</h1>
+        <p>Descubrí sus características, comportamiento y necesidades.</p>
+        <a href="#informacion" class="boton">Conocer más</a>
+    </div>
+</section>
+
+<section class="mascotas" id="informacion">
+    <h2>Todo sobre los perros 🐶</h2>
+    <p class="subtitulo">Compañeros leales, inteligentes y cariñosos.</p>
+    <div class="tarjetas">
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Golden retriever">
+            <div class="tarjeta-contenido">
+                <h3>Características</h3>
+                <p>Los perros son mamíferos domésticos que pueden aprender órdenes y convivir estrechamente con las personas.</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="Perro al aire libre">
+            <div class="tarjeta-contenido">
+                <h3>Actividad y juegos</h3>
+                <p>Los paseos, los juegos y la estimulación mental ayudan a mantenerlos activos y favorecen su bienestar.</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Perro pequeño">
+            <div class="tarjeta-contenido">
+                <h3>Convivencia responsable</h3>
+                <p>Necesitan agua limpia, alimento apropiado, un entorno seguro, educación amable y atención veterinaria.</p>
+            </div>
+        </article>
+    </div>
+    <p style="margin-top:30px">
+        <a class="boton" href="razas.html">Descubrir las razas</a>
+        <a class="boton" href="cuidados.html">Ver consejos</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Mundo Animal | Hecho con ❤️ para los amantes de los animales.</p>
+</footer>
+
+<div class="visor-fotos" id="visorFotos" aria-hidden="true">
+    <button class="cerrar-visor" id="cerrarVisor" aria-label="Cerrar fotografía">&times;</button>
+    <button class="foto-anterior" id="fotoAnterior" aria-label="Fotografía anterior">&#10094;</button>
+    <figure><img id="fotoAmpliada" src="" alt=""><figcaption id="descripcionFoto"></figcaption></figure>
+    <button class="foto-siguiente" id="fotoSiguiente" aria-label="Fotografía siguiente">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

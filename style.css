@@ -1,0 +1,884 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26352f;
+    background: #fffdf8;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px #00000010;
+}
+
+.logo {
+    color: #24745a;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #26352f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e58c56;
+}
+
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, #153e32e8, #153e3240),
+        url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.etiqueta {
+    color: #ffe0a8;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.etiqueta) {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.boton {
+    display: inline-block;
+    background: #f2b36d;
+    color: #26352f;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background: #ffd29c;
+    transform: translateY(-2px);
+}
+
+.mascotas,
+.cuidados {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.mascotas h2,
+.cuidados h2,
+.mensaje h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #68766f;
+    margin-bottom: 35px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    text-align: left;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px #0000000e;
+    transition: transform 0.25s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-contenido {
+    padding: 25px;
+}
+
+.tarjeta h3 {
+    color: #24745a;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    margin-bottom: 18px;
+}
+
+.tarjeta a {
+    color: #24745a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.consejos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.consejo {
+    background: #f0f5eb;
+    padding: 28px 20px;
+    border-radius: 16px;
+}
+
+.consejo span {
+    font-size: 36px;
+}
+
+.consejo h3 {
+    margin: 12px 0;
+}
+
+.mensaje {
+    background: #e5f0e6;
+    text-align: center;
+    padding: 55px 8%;
+}
+
+footer {
+    background: #193f33;
+    color: white;
+    text-align: center;
+    padding: 24px 6%;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 55px 7%;
+    }
+
+    .tarjetas,
+    .consejos {
+        grid-template-columns: 1fr;
+    }
+
+    .mascotas,
+    .cuidados {
+        padding: 50px 6%;
+    }
+
+    .mascotas h2,
+    .cuidados h2,
+    .mensaje h2 {
+        font-size: 27px;
+    }
+}
+/* GALERÍA DE FOTOS */
+.galeria {
+padding: 70px 8%;
+text-align: center;
+background: #f0f5eb;
+}
+
+.galeria h2,
+.razas h2 {
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.galeria-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 18px;
+margin-top: 35px;
+}
+
+.galeria-grid img {
+width: 100%;
+height: 240px;
+object-fit: cover;
+border-radius: 15px;
+display: block;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-grid img:hover {
+transform: scale(1.035);
+box-shadow: 0 8px 22px #00000025;
+}
+
+/* SECCIÓN DE RAZAS */
+.razas {
+padding: 70px 8%;
+text-align: center;
+}
+
+.titulo-animal {
+margin: 40px 0 22px;
+color: #24745a;
+font-size: 25px;
+}
+
+.razas-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+text-align: left;
+}
+
+.raza {
+background: white;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 5px 20px #00000012;
+transition: transform 0.25s;
+}
+
+.raza:hover {
+transform: translateY(-5px);
+}
+
+.raza img {
+display: block;
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+.raza-info {
+padding: 20px;
+}
+
+.raza-info h4 {
+font-size: 20px;
+color: #24745a;
+margin-bottom: 10px;
+}
+
+.raza-info p {
+color: #526057;
+line-height: 1.7;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 700px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .razas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria,
+    .razas {
+        padding: 50px 6%;
+    }
+
+    .galeria-grid img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 420px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* FOTOGRAFÍAS AMPLIABLES */
+.galeria-grid img,
+.razas-grid img,
+.tarjeta img {
+    cursor: zoom-in;
+}
+
+.visor-fotos {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.visor-fotos.activo {
+    display: flex;
+}
+
+.visor-fotos figure {
+    max-width: 85%;
+    text-align: center;
+}
+
+.visor-fotos figure img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    max-height: 75vh;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.visor-fotos figcaption {
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.visor-fotos button {
+    border: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.visor-fotos button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.visor-fotos .cerrar-visor {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 36px;
+}
+
+@media (max-width: 600px) {
+    .visor-fotos {
+        gap: 8px;
+        padding: 60px 8px;
+    }
+
+    .visor-fotos figure {
+        max-width: calc(100% - 90px);
+    }
+
+    .visor-fotos figure img {
+        max-height: 65vh;
+    }
+    .visor-fotos button {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 100%;
+    min-height: 550px;
+    padding: 80px 8%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjetas,
+.galeria-grid,
+.razas-grid,
+.consejos {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.visor-fotos {
+  display: none;
+}
+
+.visor-fotos.activo {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.visor-fotos img {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+/* ANIMACIÓN DE LA PORTADA */
+
+@keyframes aparecerDesdeAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content .etiqueta {
+    animation: aparecerDesdeAbajo 0.7s ease both;
+}
+
+.hero-content h1 {
+    animation: aparecerDesdeAbajo 0.8s ease 0.15s both;
+}
+
+.hero-content > p:not(.etiqueta) {
+    animation: aparecerDesdeAbajo 0.8s ease 0.3s both;
+}
+
+.hero-content .boton {
+    animation: aparecerDesdeAbajo 0.8s ease 0.45s both;
+}
+
+/* MOVIMIENTO DE TARJETAS */
+
+.tarjeta,
+.consejo,
+.raza {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.tarjeta:hover,
+.consejo:hover,
+.raza:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px #00000018;
+}
+
+/* ZOOM DE IMÁGENES */
+
+.tarjeta img,
+.raza img,
+.galeria-grid img {
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover img,
+.raza:hover img,
+.galeria-grid img:hover {
+    transform: scale(1.04);
+}
+
+/* CARRUSEL DE FOTOGRAFÍAS */
+
+.galeria-carrusel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.galeria-carrusel .galeria-grid {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    gap: 18px;
+    margin-top: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.galeria-carrusel .galeria-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.galeria-carrusel .galeria-grid img {
+    flex: 0 0 calc((100% - 36px) / 3);
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.flecha-carrusel {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #24745a;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.flecha-carrusel:hover {
+    background: #193f33;
+}
+
+@media (max-width: 700px) {
+    .galeria-carrusel .galeria-grid img {
+        flex-basis: 100%;
+    }
+}
+
+
+/* =====================================
+   ANIMACIONES DE MUNDO ANIMAL
+===================================== */
+
+/* Animación de entrada */
+
+@keyframes aparecerDesdeAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación del texto principal */
+
+.hero-content .etiqueta {
+    animation: aparecerDesdeAbajo 0.7s ease both;
+}
+
+.hero-content h1 {
+    animation: aparecerDesdeAbajo 0.8s ease 0.15s both;
+}
+
+.hero-content > p:not(.etiqueta) {
+    animation: aparecerDesdeAbajo 0.8s ease 0.3s both;
+}
+
+.hero-content .boton {
+    animation: aparecerDesdeAbajo 0.8s ease 0.45s both;
+}
+
+/* Movimiento de las tarjetas */
+
+.tarjeta,
+.consejo,
+.raza {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.tarjeta:hover,
+.consejo:hover,
+.raza:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px #00000018;
+}
+
+/* Zoom suave de las fotografías */
+
+.tarjeta img,
+.raza img,
+.galeria-grid img {
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover img,
+.raza:hover img,
+.galeria-grid img:hover {
+    transform: scale(1.04);
+}
+
+/* Movimiento suave al recorrer la página */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Respetar la preferencia de movimiento reducido */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* PRUEBA DE ANIMACIÓN */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1 {
+    animation: aparecer 1.2s ease both;
+}
+
+.tarjeta {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px #00000030;
+}
+
+
+/* Animación de entrada para la galería */
+@keyframes aparecerGaleria {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.galeria-grid img {
+    animation: aparecerGaleria 0.8s ease both;
+}
+
+/* Aparición escalonada de las imágenes */
+.galeria-grid img:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.galeria-grid img:nth-child(3) {
+    animation-delay: 0.30s;
+}
+
+.galeria-grid img:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+
+/* CARRUSEL */
+.carrusel {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    aspect-ratio: 16 / 7;
+    background: #e8eee8;
+}
+
+.carrusel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease;
+}
+
+.carrusel-slide.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carrusel-texto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(transparent, #000000b8);
+}
+
+.carrusel-texto h2 {
+    margin: 0 0 8px;
+}
+
+.carrusel-texto p {
+    margin: 0;
+}
+
+.carrusel-flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    color: white;
+    background: #00000070;
+    font-size: 22px;
+    z-index: 2;
+}
+
+.carrusel-flecha:hover {
+    background: #000000b0;
+}
+
+.carrusel-flecha.anterior {
+    left: 15px;
+}
+
+.carrusel-flecha.siguiente {
+    right: 15px;
+}
+
+.carrusel-puntos {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.carrusel-punto {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #ffffff80;
+    cursor: pointer;
+}
+
+.carrusel-punto.activo {
+    background: white;
+}
+
+@media (max-width: 600px) {
+    .carrusel-contenedor {
+        aspect-ratio: 4 / 3;
+    }
+
+    .carrusel-texto {
+        padding: 15px;
+        padding-bottom: 35px;
+    }
+
+    .carrusel-texto h2 {
+        font-size: 20px;
+    }
+
+    .carrusel-texto p {
+        font-size: 14px;
+    }
+}
+
+
+/* Mostrar el visor al abrir una fotografía */
+.visor-fotos[aria-hidden="false"] {
+    display: flex !important;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ocultar el visor al cerrarlo */
+.visor-fotos[aria-hidden="true"] {
+    display: none !important;
+}

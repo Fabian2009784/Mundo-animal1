@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos | Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">🐾 Mundo Animal</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="razas.html">Razas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="cuidados.html">Cuidados</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="etiqueta">PEQUEÑOS EXPLORADORES</p>
+        <h1>Descubrí el fascinante mundo de los gatos</h1>
+        <p>Conocé sus hábitos, su comportamiento y cómo cuidarlos.</p>
+        <a href="#informacion" class="boton">Conocer más</a>
+    </div>
+</section>
+
+<section class="mascotas" id="informacion">
+    <h2>Todo sobre los gatos 🐱</h2>
+    <p class="subtitulo">Animales curiosos, ágiles y llenos de personalidad.</p>
+    <div class="tarjetas">
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80" alt="Gato doméstico">
+            <div class="tarjeta-contenido">
+                <h3>Características</h3>
+                <p>Los gatos son mamíferos domésticos con gran agilidad, sentidos desarrollados y diferentes personalidades.</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Gato mirando a la cámara">
+            <div class="tarjeta-contenido">
+                <h3>Comportamiento</h3>
+                <p>Se comunican mediante sonidos, movimientos de la cola, posturas y otras señales corporales.</p>
+            </div>
+        </article>
+        <article class="tarjeta">
+            <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80" alt="Gato descansando">
+            <div class="tarjeta-contenido">
+                <h3>Un hogar seguro</h3>
+                <p>Necesitan agua fresca, alimento apropiado, arenero limpio, lugares para descansar y juegos diarios.</p>
+            </div>
+        </article>
+    </div>
+    <p style="margin-top:30px">
+        <a class="boton" href="razas.html">Descubrir las razas</a>
+        <a class="boton" href="cuidados.html">Ver consejos</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Mundo Animal | Hecho con ❤️ para los amantes de los animales.</p>
+</footer>
+
+<div class="visor-fotos" id="visorFotos" aria-hidden="true">
+    <button class="cerrar-visor" id="cerrarVisor" aria-label="Cerrar fotografía">&times;</button>
+    <button class="foto-anterior" id="fotoAnterior" aria-label="Fotografía anterior">&#10094;</button>
+    <figure><img id="fotoAmpliada" src="" alt=""><figcaption id="descripcionFoto"></figcaption></figure>
+    <button class="foto-siguiente" id="fotoSiguiente" aria-label="Fotografía siguiente">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

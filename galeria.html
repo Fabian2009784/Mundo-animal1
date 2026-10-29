@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Mundo Animal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">🐾 Mundo Animal</a>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="perros.html">Perros</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="razas.html">Razas</a>
+        <a href="galeria.html">Galería</a>
+        <a href="cuidados.html">Cuidados</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="etiqueta">MOMENTOS INOLVIDABLES</p>
+        <h1>Galería de mascotas</h1>
+        <p>Una colección de imágenes de nuestros amigos de cuatro patas.</p>
+    </div>
+</section>
+
+<section class="galeria" id="galeria">
+    <h2>📸 Nuestros amigos peludos</h2>
+    <p class="subtitulo">Hacé clic en una foto para ampliarla.</p>
+
+    <div class="galeria-grid">
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=80" alt="Golden retriever">
+        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80" alt="Gato doméstico">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Perro pequeño">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" alt="Gato mirando a la cámara">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80" alt="Perro al aire libre">
+        <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=80" alt="Gato descansando">
+        <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=80" alt="Perro jugando">
+        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=800&q=80" alt="Gato en casa">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80" alt="Dos perros juntos">
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mundo Animal | Hecho con ❤️ para los amantes de los animales.</p>
+</footer>
+
+<div class="visor-fotos" id="visorFotos" aria-hidden="true">
+    <button class="cerrar-visor" id="cerrarVisor" aria-label="Cerrar fotografía">&times;</button>
+    <button class="foto-anterior" id="fotoAnterior" aria-label="Fotografía anterior">&#10094;</button>
+    <figure><img id="fotoAmpliada" src="" alt=""><figcaption id="descripcionFoto"></figcaption></figure>
+    <button class="foto-siguiente" id="fotoSiguiente" aria-label="Fotografía siguiente">&#10095;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
