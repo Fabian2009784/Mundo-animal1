@@ -168,19 +168,16 @@ document.querySelectorAll(".carrusel").forEach((carrusel) => {
     mostrar(0);
 });
 
-
 /* ABRIR IMÁGENES DEL CARRUSEL EN EL VISOR */
 document.querySelectorAll(".carrusel-slide img").forEach((imagen) => {
     imagen.style.cursor = "zoom-in";
 
     imagen.addEventListener("click", () => {
-        const visor = document.getElementById("visorfotos");
+        const visor = document.getElementById("visorFotos");
         const fotoAmpliada = document.getElementById("fotoAmpliada");
         const descripcion = document.getElementById("descripcionFoto");
 
-        if (!visor || !fotoAmpliada) {
-            return;
-        }
+        if (!visor || !fotoAmpliada) return;
 
         fotoAmpliada.src = imagen.src;
         fotoAmpliada.alt = imagen.alt;
@@ -188,6 +185,12 @@ document.querySelectorAll(".carrusel-slide img").forEach((imagen) => {
         if (descripcion) {
             descripcion.textContent = imagen.alt;
         }
+
+        visor.classList.add("activo");
+        visor.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    });
+});
 
         visor.setAttribute("aria-hidden", "false");
     });
