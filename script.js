@@ -192,6 +192,4 @@ document.querySelectorAll(".carrusel-slide img").forEach((imagen) => {
     });
 });
 
-        visor.setAttribute("aria-hidden", "false");
-    });
-});
+      
